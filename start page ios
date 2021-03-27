@@ -1,0 +1,65 @@
+// we-removebg-preview 1
+
+
+var view = UILabel()
+
+view.frame = CGRect(x: 0, y: 0, width: 500, height: 500)
+
+view.backgroundColor = .white
+
+
+let image0 = UIImage(named: "we-removebg-preview.png")?.cgImage
+
+let layer0 = CALayer()
+
+layer0.contents = image0
+
+layer0.bounds = view.bounds
+
+layer0.position = view.center
+
+view.layer.addSublayer(layer0)
+
+
+
+var parent = self.view!
+
+parent.addSubview(view)
+
+view.translatesAutoresizingMaskIntoConstraints = false
+
+view.widthAnchor.constraint(equalToConstant: 500).isActive = true
+
+view.heightAnchor.constraint(equalToConstant: 500).isActive = true
+
+view.leadingAnchor.constraint(equalTo: parent.leadingAnchor, constant: -43).isActive = true
+
+view.topAnchor.constraint(equalTo: parent.topAnchor, constant: 111).isActive = true
+
+
+
+
+// status bar
+
+
+view = UILabel()
+
+view.frame = CGRect(x: 0, y: 0, width: 375, height: 44)
+
+view.backgroundColor = .white
+
+
+
+parent = self.view!
+
+parent.addSubview(view)
+
+view.translatesAutoresizingMaskIntoConstraints = false
+
+view.widthAnchor.constraint(equalToConstant: 375).isActive = true
+
+view.heightAnchor.constraint(equalToConstant: 44).isActive = true
+
+view.leadingAnchor.constraint(equalTo: parent.leadingAnchor, constant: 0).isActive = true
+
+view.topAnchor.constraint(equalTo: parent.topAnchor, constant: 0).isActive = true
