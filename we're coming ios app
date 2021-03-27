@@ -1,0 +1,191 @@
+// iPhone 11 Pro Max - 1
+
+
+var view = UILabel()
+
+view.frame = CGRect(x: 0, y: 0, width: 414, height: 896)
+
+view.backgroundColor = .white
+
+
+view.layer.backgroundColor = UIColor(red: 1, green: 1, blue: 1, alpha: 1).cgColor
+
+
+
+
+// Create Account
+
+
+view = UILabel()
+
+view.frame = CGRect(x: 0, y: 0, width: 414, height: 896)
+
+view.backgroundColor = .white
+
+
+view.layer.backgroundColor = UIColor(red: 1, green: 1, blue: 1, alpha: 1).cgColor
+
+
+
+
+// Login
+
+
+view = UILabel()
+
+view.frame = CGRect(x: 0, y: 0, width: 414, height: 896)
+
+view.backgroundColor = .white
+
+
+view.layer.backgroundColor = UIColor(red: 1, green: 1, blue: 1, alpha: 1).cgColor
+
+
+
+
+// main screen 1
+
+
+view = UILabel()
+
+view.frame = CGRect(x: 0, y: 0, width: 414, height: 896)
+
+view.backgroundColor = .white
+
+
+view.layer.backgroundColor = UIColor(red: 1, green: 1, blue: 1, alpha: 1).cgColor
+
+
+
+
+// main screen 3
+
+
+view = UILabel()
+
+view.frame = CGRect(x: 0, y: 0, width: 414, height: 896)
+
+view.backgroundColor = .white
+
+
+view.layer.backgroundColor = UIColor(red: 1, green: 1, blue: 1, alpha: 1).cgColor
+
+
+
+
+// profile
+
+
+view = UILabel()
+
+view.frame = CGRect(x: 0, y: 0, width: 414, height: 896)
+
+view.backgroundColor = .white
+
+
+view.layer.backgroundColor = UIColor(red: 1, green: 1, blue: 1, alpha: 1).cgColor
+
+
+
+
+// notifications
+
+
+view = UILabel()
+
+view.frame = CGRect(x: 0, y: 0, width: 414, height: 896)
+
+view.backgroundColor = .white
+
+
+view.layer.backgroundColor = UIColor(red: 1, green: 1, blue: 1, alpha: 1).cgColor
+
+
+
+
+// request
+
+
+view = UILabel()
+
+view.frame = CGRect(x: 0, y: 0, width: 414, height: 896)
+
+view.backgroundColor = .white
+
+
+view.layer.backgroundColor = UIColor(red: 1, green: 1, blue: 1, alpha: 1).cgColor
+
+
+
+
+// main screen 2
+
+
+view = UILabel()
+
+view.frame = CGRect(x: 0, y: 0, width: 414, height: 896)
+
+view.backgroundColor = .white
+
+
+view.layer.backgroundColor = UIColor(red: 1, green: 1, blue: 1, alpha: 1).cgColor
+
+
+
+
+// onboard 1
+
+
+view = UILabel()
+
+view.frame = CGRect(x: 0, y: 0, width: 414, height: 896)
+
+view.backgroundColor = .white
+
+
+view.layer.backgroundColor = UIColor(red: 1, green: 1, blue: 1, alpha: 1).cgColor
+
+
+
+
+// onboard 2
+
+
+view = UILabel()
+
+view.frame = CGRect(x: 0, y: 0, width: 414, height: 896)
+
+view.backgroundColor = .white
+
+
+view.layer.backgroundColor = UIColor(red: 1, green: 1, blue: 1, alpha: 1).cgColor
+
+
+
+
+// onboard 3
+
+
+view = UILabel()
+
+view.frame = CGRect(x: 0, y: 0, width: 414, height: 896)
+
+view.backgroundColor = .white
+
+
+view.layer.backgroundColor = UIColor(red: 1, green: 1, blue: 1, alpha: 1).cgColor
+
+
+
+
+// question-circle
+
+
+view = UILabel()
+
+view.frame = CGRect(x: 0, y: 0, width: 22, height: 24)
+
+view.backgroundColor = .white
+
+
+
