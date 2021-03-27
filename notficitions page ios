@@ -1,0 +1,186 @@
+// we-removebg-preview 1
+
+
+var view = UILabel()
+
+view.frame = CGRect(x: 0, y: 0, width: 75, height: 57)
+
+view.backgroundColor = .white
+
+
+let image0 = UIImage(named: "we-removebg-preview.png")?.cgImage
+
+let layer0 = CALayer()
+
+layer0.contents = image0
+
+layer0.transform = CATransform3DMakeAffineTransform(CGAffineTransform(a: 1.68, b: 0, c: 0, d: 2.07, tx: -0.27, ty: -0.28))
+
+layer0.bounds = view.bounds
+
+layer0.position = view.center
+
+view.layer.addSublayer(layer0)
+
+
+
+var parent = self.view!
+
+parent.addSubview(view)
+
+view.translatesAutoresizingMaskIntoConstraints = false
+
+view.widthAnchor.constraint(equalToConstant: 75).isActive = true
+
+view.heightAnchor.constraint(equalToConstant: 57).isActive = true
+
+view.leadingAnchor.constraint(equalTo: parent.leadingAnchor, constant: 170).isActive = true
+
+view.topAnchor.constraint(equalTo: parent.topAnchor, constant: 47).isActive = true
+
+
+
+
+// status bar
+
+
+view = UILabel()
+
+view.frame = CGRect(x: 0, y: 0, width: 375, height: 44)
+
+view.backgroundColor = .white
+
+
+
+parent = self.view!
+
+parent.addSubview(view)
+
+view.translatesAutoresizingMaskIntoConstraints = false
+
+view.widthAnchor.constraint(equalToConstant: 375).isActive = true
+
+view.heightAnchor.constraint(equalToConstant: 44).isActive = true
+
+view.leadingAnchor.constraint(equalTo: parent.leadingAnchor, constant: -3).isActive = true
+
+view.topAnchor.constraint(equalTo: parent.topAnchor, constant: 0).isActive = true
+
+
+
+
+// Notifications
+
+
+view = UILabel()
+
+view.frame = CGRect(x: 0, y: 0, width: 112, height: 24)
+
+view.backgroundColor = .white
+
+
+view.textColor = UIColor(red: 0.133, green: 0.196, blue: 0.388, alpha: 1)
+
+view.font = UIFont(name: "Poppins-Bold", size: 16)
+
+var paragraphStyle = NSMutableParagraphStyle()
+
+paragraphStyle.lineHeightMultiple = 1
+
+
+// Line height: 24 pt
+
+// (identical to box height)
+
+
+view.attributedText = NSMutableAttributedString(string: "Notifications", attributes: [NSAttributedString.Key.kern: 0.5, NSAttributedString.Key.paragraphStyle: paragraphStyle])
+
+
+parent = self.view!
+
+parent.addSubview(view)
+
+view.translatesAutoresizingMaskIntoConstraints = false
+
+
+
+
+// Line 40
+
+
+view = UILabel()
+
+view.frame = CGRect(x: 0, y: 0, width: 419, height: 0)
+
+view.backgroundColor = .white
+
+
+var stroke = UIView()
+
+stroke.bounds = view.bounds.insetBy(dx: -0.5, dy: -0.5)
+
+stroke.center = view.center
+
+view.addSubview(stroke)
+
+view.bounds = view.bounds.insetBy(dx: -0.5, dy: -0.5)
+
+stroke.layer.borderWidth = 1
+
+stroke.layer.borderColor = UIColor(red: 0.921, green: 0.94, blue: 1, alpha: 1).cgColor
+
+
+parent = self.view!
+
+parent.addSubview(view)
+
+view.translatesAutoresizingMaskIntoConstraints = false
+
+
+
+
+// system icon/24px/Left
+
+
+view = UILabel()
+
+view.frame = CGRect(x: 0, y: 0, width: 24, height: 24)
+
+view.backgroundColor = .white
+
+
+
+parent = self.view!
+
+parent.addSubview(view)
+
+view.translatesAutoresizingMaskIntoConstraints = false
+
+
+
+
+// List
+
+
+view = UILabel()
+
+view.frame = CGRect(x: 0, y: 0, width: 375, height: 112)
+
+view.backgroundColor = .white
+
+
+
+parent = self.view!
+
+parent.addSubview(view)
+
+view.translatesAutoresizingMaskIntoConstraints = false
+
+view.widthAnchor.constraint(equalToConstant: 375).isActive = true
+
+view.heightAnchor.constraint(equalToConstant: 112).isActive = true
+
+view.leadingAnchor.constraint(equalTo: parent.leadingAnchor, constant: 11).isActive = true
+
+view.topAnchor.constraint(equalTo: parent.topAnchor, constant: 152).isActive = true
+
