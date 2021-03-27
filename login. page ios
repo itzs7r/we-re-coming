@@ -1,0 +1,266 @@
+
+var view = UILabel()
+
+view.frame = CGRect(x: 0, y: 0, width: 250, height: 269)
+
+view.backgroundColor = .white
+
+
+let image0 = UIImage(named: "we-removebg-preview.png")?.cgImage
+
+let layer0 = CALayer()
+
+layer0.contents = image0
+
+layer0.transform = CATransform3DMakeAffineTransform(CGAffineTransform(a: 1.08, b: 0, c: 0, d: 1, tx: -0.04, ty: 0))
+
+layer0.bounds = view.bounds
+
+layer0.position = view.center
+
+view.layer.addSublayer(layer0)
+
+
+
+var parent = self.view!
+
+parent.addSubview(view)
+
+view.translatesAutoresizingMaskIntoConstraints = false
+
+view.widthAnchor.constraint(equalToConstant: 250).isActive = true
+
+view.heightAnchor.constraint(equalToConstant: 269).isActive = true
+
+view.leadingAnchor.constraint(equalTo: parent.leadingAnchor, constant: 82).isActive = true
+
+view.topAnchor.constraint(equalTo: parent.topAnchor, constant: 14).isActive = true
+
+
+
+
+// status bar
+
+
+view = UILabel()
+
+view.frame = CGRect(x: 0, y: 0, width: 375, height: 44)
+
+view.backgroundColor = .white
+
+
+
+parent = self.view!
+
+parent.addSubview(view)
+
+view.translatesAutoresizingMaskIntoConstraints = false
+
+view.widthAnchor.constraint(equalToConstant: 375).isActive = true
+
+view.heightAnchor.constraint(equalToConstant: 44).isActive = true
+
+view.leadingAnchor.constraint(equalTo: parent.leadingAnchor, constant: -3).isActive = true
+
+view.topAnchor.constraint(equalTo: parent.topAnchor, constant: 0).isActive = true
+
+
+
+
+// Forms
+
+
+view = UILabel()
+
+view.frame = CGRect(x: 0, y: 0, width: 393, height: 50)
+
+view.backgroundColor = .white
+
+
+
+parent = self.view!
+
+parent.addSubview(view)
+
+view.translatesAutoresizingMaskIntoConstraints = false
+
+view.widthAnchor.constraint(equalToConstant: 393).isActive = true
+
+view.heightAnchor.constraint(equalToConstant: 50).isActive = true
+
+view.leadingAnchor.constraint(equalTo: parent.leadingAnchor, constant: 11).isActive = true
+
+view.topAnchor.constraint(equalTo: parent.topAnchor, constant: 331).isActive = true
+
+
+
+
+// Rectangle 155
+
+
+view = UILabel()
+
+view.frame = CGRect(x: 0, y: 0, width: 393, height: 50)
+
+view.backgroundColor = .white
+
+
+view.layer.backgroundColor = UIColor(red: 0.949, green: 0.949, blue: 0.949, alpha: 1).cgColor
+
+view.layer.cornerRadius = 10
+
+
+parent = self.view!
+
+parent.addSubview(view)
+
+view.translatesAutoresizingMaskIntoConstraints = false
+
+
+
+
+// Forms
+
+
+view = UILabel()
+
+view.frame = CGRect(x: 0, y: 0, width: 393, height: 50)
+
+view.backgroundColor = .white
+
+
+
+parent = self.view!
+
+parent.addSubview(view)
+
+view.translatesAutoresizingMaskIntoConstraints = false
+
+view.widthAnchor.constraint(equalToConstant: 393).isActive = true
+
+view.heightAnchor.constraint(equalToConstant: 50).isActive = true
+
+view.leadingAnchor.constraint(equalTo: parent.leadingAnchor, constant: 11).isActive = true
+
+view.topAnchor.constraint(equalTo: parent.topAnchor, constant: 398).isActive = true
+
+
+
+
+// Primary button
+
+
+view = UILabel()
+
+view.frame = CGRect(x: 0, y: 0, width: 345, height: 50)
+
+view.backgroundColor = .white
+
+
+
+parent = self.view!
+
+parent.addSubview(view)
+
+view.translatesAutoresizingMaskIntoConstraints = false
+
+view.widthAnchor.constraint(equalToConstant: 345).isActive = true
+
+view.heightAnchor.constraint(equalToConstant: 50).isActive = true
+
+view.leadingAnchor.constraint(equalTo: parent.leadingAnchor, constant: 35).isActive = true
+
+view.topAnchor.constraint(equalTo: parent.topAnchor, constant: 568).isActive = true
+
+
+
+
+// Forgot password ?
+
+
+view = UILabel()
+
+view.frame = CGRect(x: 0, y: 0, width: 131, height: 23)
+
+view.backgroundColor = .white
+
+
+view.textColor = UIColor(red: 0.375, green: 0.812, blue: 1, alpha: 1)
+
+view.font = UIFont(name: "Actor-Regular", size: 15)
+
+var paragraphStyle = NSMutableParagraphStyle()
+
+paragraphStyle.lineHeightMultiple = 1.25
+
+
+// Line height: 22 pt
+
+// (identical to box height)
+
+
+view.textAlignment = .center
+
+view.attributedText = NSMutableAttributedString(string: "Forgot password ?", attributes: [NSAttributedString.Key.paragraphStyle: paragraphStyle])
+
+
+parent = self.view!
+
+parent.addSubview(view)
+
+view.translatesAutoresizingMaskIntoConstraints = false
+
+view.widthAnchor.constraint(equalToConstant: 131).isActive = true
+
+view.heightAnchor.constraint(equalToConstant: 23).isActive = true
+
+view.leadingAnchor.constraint(equalTo: parent.leadingAnchor, constant: 24).isActive = true
+
+view.topAnchor.constraint(equalTo: parent.topAnchor, constant: 465).isActive = true
+
+
+
+
+// Don’t have an account yet?
+
+
+view = UILabel()
+
+view.frame = CGRect(x: 0, y: 0, width: 193, height: 23)
+
+view.backgroundColor = .white
+
+
+view.textColor = UIColor(red: 0.375, green: 0.812, blue: 1, alpha: 1)
+
+view.font = UIFont(name: "Actor-Regular", size: 15)
+
+paragraphStyle = NSMutableParagraphStyle()
+
+paragraphStyle.lineHeightMultiple = 1.25
+
+
+// Line height: 22 pt
+
+// (identical to box height)
+
+
+view.textAlignment = .center
+
+view.attributedText = NSMutableAttributedString(string: "Don’t have an account yet?", attributes: [NSAttributedString.Key.paragraphStyle: paragraphStyle])
+
+
+parent = self.view!
+
+parent.addSubview(view)
+
+view.translatesAutoresizingMaskIntoConstraints = false
+
+view.widthAnchor.constraint(equalToConstant: 193).isActive = true
+
+view.heightAnchor.constraint(equalToConstant: 23).isActive = true
+
+view.leadingAnchor.constraint(equalTo: parent.leadingAnchor, constant: 111).isActive = true
+
+view.topAnchor.constraint(equalTo: parent.topAnchor, constant: 635).isActive = true
+
