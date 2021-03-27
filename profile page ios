@@ -1,0 +1,400 @@
+// we-removebg-preview 1
+
+
+var view = UILabel()
+
+view.frame = CGRect(x: 0, y: 0, width: 75, height: 57)
+
+view.backgroundColor = .white
+
+
+let image0 = UIImage(named: "we-removebg-preview.png")?.cgImage
+
+let layer0 = CALayer()
+
+layer0.contents = image0
+
+layer0.transform = CATransform3DMakeAffineTransform(CGAffineTransform(a: 1.68, b: 0, c: 0, d: 2.07, tx: -0.27, ty: -0.28))
+
+layer0.bounds = view.bounds
+
+layer0.position = view.center
+
+view.layer.addSublayer(layer0)
+
+
+
+var parent = self.view!
+
+parent.addSubview(view)
+
+view.translatesAutoresizingMaskIntoConstraints = false
+
+view.widthAnchor.constraint(equalToConstant: 75).isActive = true
+
+view.heightAnchor.constraint(equalToConstant: 57).isActive = true
+
+view.leadingAnchor.constraint(equalTo: parent.leadingAnchor, constant: 170).isActive = true
+
+view.topAnchor.constraint(equalTo: parent.topAnchor, constant: 47).isActive = true
+
+
+
+
+// status bar
+
+
+view = UILabel()
+
+view.frame = CGRect(x: 0, y: 0, width: 375, height: 44)
+
+view.backgroundColor = .white
+
+
+
+parent = self.view!
+
+parent.addSubview(view)
+
+view.translatesAutoresizingMaskIntoConstraints = false
+
+view.widthAnchor.constraint(equalToConstant: 375).isActive = true
+
+view.heightAnchor.constraint(equalToConstant: 44).isActive = true
+
+view.leadingAnchor.constraint(equalTo: parent.leadingAnchor, constant: -3).isActive = true
+
+view.topAnchor.constraint(equalTo: parent.topAnchor, constant: 0).isActive = true
+
+
+
+
+// Profile
+
+
+view = UILabel()
+
+view.frame = CGRect(x: 0, y: 0, width: 56, height: 24)
+
+view.backgroundColor = .white
+
+
+view.textColor = UIColor(red: 0.133, green: 0.196, blue: 0.388, alpha: 1)
+
+view.font = UIFont(name: "Poppins-Bold", size: 16)
+
+var paragraphStyle = NSMutableParagraphStyle()
+
+paragraphStyle.lineHeightMultiple = 1
+
+
+// Line height: 24 pt
+
+// (identical to box height)
+
+
+view.attributedText = NSMutableAttributedString(string: "Profile", attributes: [NSAttributedString.Key.kern: 0.5, NSAttributedString.Key.paragraphStyle: paragraphStyle])
+
+
+parent = self.view!
+
+parent.addSubview(view)
+
+view.translatesAutoresizingMaskIntoConstraints = false
+
+
+
+
+// Line 40
+
+
+view = UILabel()
+
+view.frame = CGRect(x: 0, y: 0, width: 419, height: 0)
+
+view.backgroundColor = .white
+
+
+var stroke = UIView()
+
+stroke.bounds = view.bounds.insetBy(dx: -0.5, dy: -0.5)
+
+stroke.center = view.center
+
+view.addSubview(stroke)
+
+view.bounds = view.bounds.insetBy(dx: -0.5, dy: -0.5)
+
+stroke.layer.borderWidth = 1
+
+stroke.layer.borderColor = UIColor(red: 0.921, green: 0.94, blue: 1, alpha: 1).cgColor
+
+
+parent = self.view!
+
+parent.addSubview(view)
+
+view.translatesAutoresizingMaskIntoConstraints = false
+
+
+
+
+// system icon/24px/Left
+
+
+view = UILabel()
+
+view.frame = CGRect(x: 0, y: 0, width: 24, height: 24)
+
+view.backgroundColor = .white
+
+
+
+parent = self.view!
+
+parent.addSubview(view)
+
+view.translatesAutoresizingMaskIntoConstraints = false
+
+
+
+
+// Profile
+
+
+view = UILabel()
+
+view.frame = CGRect(x: 0, y: 0, width: 143, height: 47)
+
+view.backgroundColor = .white
+
+
+view.layer.backgroundColor = UIColor(red: 0, green: 0, blue: 0, alpha: 0).cgColor
+
+
+parent = self.view!
+
+parent.addSubview(view)
+
+view.translatesAutoresizingMaskIntoConstraints = false
+
+view.widthAnchor.constraint(equalToConstant: 143).isActive = true
+
+view.heightAnchor.constraint(equalToConstant: 47).isActive = true
+
+view.leadingAnchor.constraint(equalTo: parent.leadingAnchor, constant: 97).isActive = true
+
+view.topAnchor.constraint(equalTo: parent.topAnchor, constant: 172).isActive = true
+
+
+
+
+// Screen Shot 2021-03-27 at 1.53 1
+
+
+view = UILabel()
+
+view.frame = CGRect(x: 0, y: 0, width: 80, height: 73)
+
+view.backgroundColor = .white
+
+
+let image0 = UIImage(named: "Screen Shot 2021-03-27 at 1.53.png")?.cgImage
+
+let layer0 = CALayer()
+
+layer0.contents = image0
+
+layer0.transform = CATransform3DMakeAffineTransform(CGAffineTransform(a: 1, b: 0, c: 0, d: 1.19, tx: 0, ty: -0.1))
+
+layer0.bounds = view.bounds
+
+layer0.position = view.center
+
+view.layer.addSublayer(layer0)
+
+
+
+parent = self.view!
+
+parent.addSubview(view)
+
+view.translatesAutoresizingMaskIntoConstraints = false
+
+view.widthAnchor.constraint(equalToConstant: 80).isActive = true
+
+view.heightAnchor.constraint(equalToConstant: 73).isActive = true
+
+view.leadingAnchor.constraint(equalTo: parent.leadingAnchor, constant: 11).isActive = true
+
+view.topAnchor.constraint(equalTo: parent.topAnchor, constant: 156).isActive = true
+
+
+
+
+// Email
+
+
+view = UILabel()
+
+view.frame = CGRect(x: 0, y: 0, width: 399, height: 54)
+
+view.backgroundColor = .white
+
+
+
+parent = self.view!
+
+parent.addSubview(view)
+
+view.translatesAutoresizingMaskIntoConstraints = false
+
+view.widthAnchor.constraint(equalToConstant: 399).isActive = true
+
+view.heightAnchor.constraint(equalToConstant: 54).isActive = true
+
+view.leadingAnchor.constraint(equalTo: parent.leadingAnchor, constant: 7).isActive = true
+
+view.topAnchor.constraint(equalTo: parent.topAnchor, constant: 340).isActive = true
+
+
+
+
+// Phone Number
+
+
+view = UILabel()
+
+view.frame = CGRect(x: 0, y: 0, width: 402, height: 54)
+
+view.backgroundColor = .white
+
+
+
+parent = self.view!
+
+parent.addSubview(view)
+
+view.translatesAutoresizingMaskIntoConstraints = false
+
+view.widthAnchor.constraint(equalToConstant: 402).isActive = true
+
+view.heightAnchor.constraint(equalToConstant: 54).isActive = true
+
+view.leadingAnchor.constraint(equalTo: parent.leadingAnchor, constant: 4).isActive = true
+
+view.topAnchor.constraint(equalTo: parent.topAnchor, constant: 376).isActive = true
+
+
+
+
+// Phone Number
+
+
+view = UILabel()
+
+view.frame = CGRect(x: 0, y: 0, width: 402, height: 54)
+
+view.backgroundColor = .white
+
+
+
+parent = self.view!
+
+parent.addSubview(view)
+
+view.translatesAutoresizingMaskIntoConstraints = false
+
+view.widthAnchor.constraint(equalToConstant: 402).isActive = true
+
+view.heightAnchor.constraint(equalToConstant: 54).isActive = true
+
+view.leadingAnchor.constraint(equalTo: parent.leadingAnchor, constant: 0).isActive = true
+
+view.topAnchor.constraint(equalTo: parent.topAnchor, constant: 448).isActive = true
+
+
+
+
+// Phone Number
+
+
+view = UILabel()
+
+view.frame = CGRect(x: 0, y: 0, width: 402, height: 54)
+
+view.backgroundColor = .white
+
+
+
+parent = self.view!
+
+parent.addSubview(view)
+
+view.translatesAutoresizingMaskIntoConstraints = false
+
+view.widthAnchor.constraint(equalToConstant: 402).isActive = true
+
+view.heightAnchor.constraint(equalToConstant: 54).isActive = true
+
+view.leadingAnchor.constraint(equalTo: parent.leadingAnchor, constant: 0).isActive = true
+
+view.topAnchor.constraint(equalTo: parent.topAnchor, constant: 484).isActive = true
+
+
+
+
+// Phone Number
+
+
+view = UILabel()
+
+view.frame = CGRect(x: 0, y: 0, width: 402, height: 54)
+
+view.backgroundColor = .white
+
+
+
+parent = self.view!
+
+parent.addSubview(view)
+
+view.translatesAutoresizingMaskIntoConstraints = false
+
+view.widthAnchor.constraint(equalToConstant: 402).isActive = true
+
+view.heightAnchor.constraint(equalToConstant: 54).isActive = true
+
+view.leadingAnchor.constraint(equalTo: parent.leadingAnchor, constant: 0).isActive = true
+
+view.topAnchor.constraint(equalTo: parent.topAnchor, constant: 516).isActive = true
+
+
+
+
+// Change Password
+
+
+view = UILabel()
+
+view.frame = CGRect(x: 0, y: 0, width: 398, height: 54)
+
+view.backgroundColor = .white
+
+
+
+parent = self.view!
+
+parent.addSubview(view)
+
+view.translatesAutoresizingMaskIntoConstraints = false
+
+view.widthAnchor.constraint(equalToConstant: 398).isActive = true
+
+view.heightAnchor.constraint(equalToConstant: 54).isActive = true
+
+view.leadingAnchor.constraint(equalTo: parent.leadingAnchor, constant: 4).isActive = true
+
+view.topAnchor.constraint(equalTo: parent.topAnchor, constant: 412).isActive = true
+
+
