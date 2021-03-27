@@ -1,0 +1,404 @@
+// we-removebg-preview 1
+
+
+var view = UILabel()
+
+view.frame = CGRect(x: 0, y: 0, width: 75, height: 57)
+
+view.backgroundColor = .white
+
+
+let image0 = UIImage(named: "we-removebg-preview.png")?.cgImage
+
+let layer0 = CALayer()
+
+layer0.contents = image0
+
+layer0.transform = CATransform3DMakeAffineTransform(CGAffineTransform(a: 1.68, b: 0, c: 0, d: 2.07, tx: -0.27, ty: -0.28))
+
+layer0.bounds = view.bounds
+
+layer0.position = view.center
+
+view.layer.addSublayer(layer0)
+
+
+
+var parent = self.view!
+
+parent.addSubview(view)
+
+view.translatesAutoresizingMaskIntoConstraints = false
+
+view.widthAnchor.constraint(equalToConstant: 75).isActive = true
+
+view.heightAnchor.constraint(equalToConstant: 57).isActive = true
+
+view.leadingAnchor.constraint(equalTo: parent.leadingAnchor, constant: 170).isActive = true
+
+view.topAnchor.constraint(equalTo: parent.topAnchor, constant: 47).isActive = true
+
+
+
+
+// status bar
+
+
+view = UILabel()
+
+view.frame = CGRect(x: 0, y: 0, width: 375, height: 44)
+
+view.backgroundColor = .white
+
+
+
+parent = self.view!
+
+parent.addSubview(view)
+
+view.translatesAutoresizingMaskIntoConstraints = false
+
+view.widthAnchor.constraint(equalToConstant: 375).isActive = true
+
+view.heightAnchor.constraint(equalToConstant: 44).isActive = true
+
+view.leadingAnchor.constraint(equalTo: parent.leadingAnchor, constant: -3).isActive = true
+
+view.topAnchor.constraint(equalTo: parent.topAnchor, constant: 0).isActive = true
+
+
+
+
+// system icon/24px/More
+
+
+view = UILabel()
+
+view.frame = CGRect(x: 0, y: 0, width: 24, height: 24)
+
+view.backgroundColor = .white
+
+
+
+parent = self.view!
+
+parent.addSubview(view)
+
+view.translatesAutoresizingMaskIntoConstraints = false
+
+
+
+
+// Group 362
+
+
+view = UILabel()
+
+view.frame = CGRect(x: 0, y: 0, width: 75, height: 44)
+
+view.backgroundColor = .white
+
+
+view.layer.backgroundColor = UIColor(red: 0, green: 0, blue: 0, alpha: 0).cgColor
+
+
+parent = self.view!
+
+parent.addSubview(view)
+
+view.translatesAutoresizingMaskIntoConstraints = false
+
+view.widthAnchor.constraint(equalToConstant: 75).isActive = true
+
+view.heightAnchor.constraint(equalToConstant: 44).isActive = true
+
+view.leadingAnchor.constraint(equalTo: parent.leadingAnchor, constant: 92).isActive = true
+
+view.topAnchor.constraint(equalTo: parent.topAnchor, constant: 834).isActive = true
+
+
+
+
+// Profile
+
+
+view = UILabel()
+
+view.frame = CGRect(x: 0, y: 0, width: 75, height: 59)
+
+view.backgroundColor = .white
+
+
+view.layer.backgroundColor = UIColor(red: 0, green: 0, blue: 0, alpha: 0).cgColor
+
+
+parent = self.view!
+
+parent.addSubview(view)
+
+view.translatesAutoresizingMaskIntoConstraints = false
+
+
+
+
+// Offer
+
+
+view = UILabel()
+
+view.frame = CGRect(x: 0, y: 0, width: 75, height: 59)
+
+view.backgroundColor = .white
+
+
+view.layer.backgroundColor = UIColor(red: 0, green: 0, blue: 0, alpha: 0).cgColor
+
+
+parent = self.view!
+
+parent.addSubview(view)
+
+view.translatesAutoresizingMaskIntoConstraints = false
+
+
+
+
+// Home
+
+
+view = UILabel()
+
+view.frame = CGRect(x: 0, y: 0, width: 75, height: 59)
+
+view.backgroundColor = .white
+
+
+view.layer.backgroundColor = UIColor(red: 0, green: 0, blue: 0, alpha: 0).cgColor
+
+
+parent = self.view!
+
+parent.addSubview(view)
+
+view.translatesAutoresizingMaskIntoConstraints = false
+
+
+
+
+// Ellipse 114
+
+
+view = UILabel()
+
+view.frame = CGRect(x: 0, y: 0, width: 42, height: 42)
+
+view.backgroundColor = .white
+
+
+view.layer.backgroundColor = UIColor(red: 0.733, green: 0.894, blue: 0.906, alpha: 1).cgColor
+
+
+parent = self.view!
+
+parent.addSubview(view)
+
+view.translatesAutoresizingMaskIntoConstraints = false
+
+view.widthAnchor.constraint(equalToConstant: 42).isActive = true
+
+view.heightAnchor.constraint(equalToConstant: 42).isActive = true
+
+view.leadingAnchor.constraint(equalTo: parent.leadingAnchor, constant: 187).isActive = true
+
+view.topAnchor.constraint(equalTo: parent.topAnchor, constant: 833).isActive = true
+
+
+
+
+// system icon/24px/Plus
+
+
+view = UILabel()
+
+view.frame = CGRect(x: 0, y: 0, width: 24, height: 24)
+
+view.backgroundColor = .white
+
+
+
+parent = self.view!
+
+parent.addSubview(view)
+
+view.translatesAutoresizingMaskIntoConstraints = false
+
+
+
+
+// Primary button
+
+
+view = UILabel()
+
+view.frame = CGRect(x: 0, y: 0, width: 191, height: 119)
+
+view.backgroundColor = .white
+
+
+
+parent = self.view!
+
+parent.addSubview(view)
+
+view.translatesAutoresizingMaskIntoConstraints = false
+
+view.widthAnchor.constraint(equalToConstant: 191).isActive = true
+
+view.heightAnchor.constraint(equalToConstant: 119).isActive = true
+
+view.leadingAnchor.constraint(equalTo: parent.leadingAnchor, constant: 215).isActive = true
+
+view.topAnchor.constraint(equalTo: parent.topAnchor, constant: 161).isActive = true
+
+
+
+
+// Primary button
+
+
+view = UILabel()
+
+view.frame = CGRect(x: 0, y: 0, width: 191, height: 119)
+
+view.backgroundColor = .white
+
+
+
+parent = self.view!
+
+parent.addSubview(view)
+
+view.translatesAutoresizingMaskIntoConstraints = false
+
+view.widthAnchor.constraint(equalToConstant: 191).isActive = true
+
+view.heightAnchor.constraint(equalToConstant: 119).isActive = true
+
+view.leadingAnchor.constraint(equalTo: parent.leadingAnchor, constant: 10).isActive = true
+
+view.topAnchor.constraint(equalTo: parent.topAnchor, constant: 161).isActive = true
+
+
+
+
+// Primary button
+
+
+view = UILabel()
+
+view.frame = CGRect(x: 0, y: 0, width: 396, height: 368)
+
+view.backgroundColor = .white
+
+
+
+parent = self.view!
+
+parent.addSubview(view)
+
+view.translatesAutoresizingMaskIntoConstraints = false
+
+view.widthAnchor.constraint(equalToConstant: 396).isActive = true
+
+view.heightAnchor.constraint(equalToConstant: 368).isActive = true
+
+view.leadingAnchor.constraint(equalTo: parent.leadingAnchor, constant: 10).isActive = true
+
+view.topAnchor.constraint(equalTo: parent.topAnchor, constant: 373).isActive = true
+
+
+
+
+// Screen Shot 2021-03-26 at 7.48 1
+
+
+view = UILabel()
+
+view.frame = CGRect(x: 0, y: 0, width: 143, height: 79)
+
+view.backgroundColor = .white
+
+
+let image0 = UIImage(named: "Screen Shot 2021-03-26 at 7.48.png")?.cgImage
+
+let layer0 = CALayer()
+
+layer0.contents = image0
+
+layer0.transform = CATransform3DMakeAffineTransform(CGAffineTransform(a: 1, b: 0, c: 0, d: 1, tx: 0, ty: 0))
+
+layer0.bounds = view.bounds
+
+layer0.position = view.center
+
+view.layer.addSublayer(layer0)
+
+
+
+parent = self.view!
+
+parent.addSubview(view)
+
+view.translatesAutoresizingMaskIntoConstraints = false
+
+view.widthAnchor.constraint(equalToConstant: 143).isActive = true
+
+view.heightAnchor.constraint(equalToConstant: 79).isActive = true
+
+view.leadingAnchor.constraint(equalTo: parent.leadingAnchor, constant: 245).isActive = true
+
+view.topAnchor.constraint(equalTo: parent.topAnchor, constant: 185).isActive = true
+
+
+
+
+// Screen Shot 2021-03-26 at 7.59 1
+
+
+view = UILabel()
+
+view.frame = CGRect(x: 0, y: 0, width: 396, height: 211)
+
+view.backgroundColor = .white
+
+
+let image0 = UIImage(named: "Screen Shot 2021-03-26 at 7.59.png")?.cgImage
+
+let layer0 = CALayer()
+
+layer0.contents = image0
+
+layer0.transform = CATransform3DMakeAffineTransform(CGAffineTransform(a: 1, b: 0, c: 0, d: 1.03, tx: 0, ty: -0.01))
+
+layer0.bounds = view.bounds
+
+layer0.position = view.center
+
+view.layer.addSublayer(layer0)
+
+
+
+parent = self.view!
+
+parent.addSubview(view)
+
+view.translatesAutoresizingMaskIntoConstraints = false
+
+view.widthAnchor.constraint(equalToConstant: 396).isActive = true
+
+view.heightAnchor.constraint(equalToConstant: 211).isActive = true
+
+view.leadingAnchor.constraint(equalTo: parent.leadingAnchor, constant: 10).isActive = true
+
+view.topAnchor.constraint(equalTo: parent.topAnchor, constant: 447).isActive = true
+
