@@ -1,0 +1,13 @@
+// onboard 1
+
+
+var view = UILabel()
+
+view.frame = CGRect(x: 0, y: 0, 
+width: 414, height: 896)
+
+view.backgroundColor = .white
+
+
+view.layer.backgroundColor = UIColor(red: 1, green: 1,
+blue: 1, alpha: 1).cgColor
